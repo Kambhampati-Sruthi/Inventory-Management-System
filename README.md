@@ -2,7 +2,7 @@
 
 A comprehensive terminal-based Inventory Management System developed using **Python** and **SQLite**, designed to streamline inventory operations, supplier management, stock tracking, and reporting through a modular, object-oriented architecture.
 
-This project demonstrates the practical implementation of **Python programming**, **Object-Oriented Programming (OOP)**, **SQL database management**, and **menu-driven application development** in a real-world business scenario.
+This project demonstrates the practical implementation of **Python Programming**, **Object-Oriented Programming (OOP)**, **SQL Database Management**, and **Menu-Driven Application Development** in a real-world business scenario.
 
 ---
 
@@ -14,7 +14,7 @@ This project demonstrates the practical implementation of **Python programming**
 
 ✔ Supplier Management System
 
-✔ Inventory Stock Tracking
+✔ Inventory Tracking
 
 ✔ Stock In / Stock Out Operations
 
@@ -34,15 +34,65 @@ This project demonstrates the practical implementation of **Python programming**
 
 # 🎯 Problem Statement
 
-Managing inventory manually can lead to inaccurate stock records, supplier tracking issues, and inefficient reporting.
+Businesses need an efficient way to manage products, suppliers, and inventory levels while maintaining accurate transaction records.
 
-This Inventory Management System addresses these challenges by providing a centralized solution for:
+Manual inventory management can result in:
 
-* Product Management
-* Supplier Management
-* Inventory Monitoring
-* Transaction Tracking
-* Operational Reporting
+* Stock shortages
+* Overstocking
+* Data inconsistencies
+* Inefficient supplier tracking
+* Lack of operational insights
+
+This Inventory Management System provides a centralized solution to automate inventory operations and improve stock management efficiency.
+
+---
+
+# ✨ Features
+
+### 📦 Product Management
+
+* Add New Product
+* View Products
+* Search Product
+* Update Product Details
+* Delete Product
+* Product Availability Check
+
+### 🚚 Supplier Management
+
+* Add Supplier
+* View Suppliers
+* Search Supplier
+* Update Supplier Information
+* Delete Supplier
+
+### 📈 Inventory Tracking
+
+* Stock In Operations
+* Stock Out Operations
+* Quantity Monitoring
+* Inventory Movement Tracking
+* Transaction History Management
+
+### ⚠️ Low Stock Monitoring
+
+* Detect Low Stock Products
+* Reorder-Level Tracking
+* Out-of-Stock Identification
+
+### 📊 Reporting Module
+
+* Dashboard Summary
+* Inventory Report
+* Low Stock Report
+* Out of Stock Report
+* Supplier Wise Report
+
+### 🔐 Authentication
+
+* Admin Login Validation
+* Access Control Before System Usage
 
 ---
 
@@ -93,13 +143,21 @@ The project follows Object-Oriented Programming principles by separating respons
 | Inventory | Inventory Transactions                |
 | Reports   | Analytics & Reporting                 |
 
-This modular structure improves maintainability, scalability, and code readability.
+### OOP Concepts Applied
+
+* Encapsulation
+* Abstraction
+* Modular Design
+* Class-Based Programming
+* Separation of Concerns
+
+This modular architecture improves scalability, maintainability, and code readability.
 
 ---
 
 # 🗄 Database Design
 
-The system uses SQLite as the backend database and follows a normalized relational schema.
+The application uses SQLite as the backend database and follows a relational database structure.
 
 ## Suppliers Table
 
@@ -144,28 +202,25 @@ The system uses SQLite as the backend database and follows a normalized relation
 ## 🔐 Authentication Module
 
 * Admin Login Validation
-* Access Control Before System Usage
+* Restricted Access for Authorized Users
 
 ---
 
 ## 📦 Product Management
 
-* Add New Product
-* View Products
-* Search Product
-* Update Product Details
-* Delete Product
-* Identify Low Stock Products
+* Create Products
+* Update Product Information
+* Delete Products
+* Search Products
+* View Product Inventory
 
 ---
 
 ## 🚚 Supplier Management
 
-* Add Supplier
-* View Supplier Information
-* Search Supplier
-* Update Supplier Details
-* Delete Supplier
+* Manage Supplier Information
+* Associate Suppliers with Products
+* Supplier Search and Updates
 
 ---
 
@@ -173,29 +228,25 @@ The system uses SQLite as the backend database and follows a normalized relation
 
 ### Stock In
 
-Increase available inventory when new stock arrives.
+Increases product quantity when new inventory arrives.
 
 ### Stock Out
 
-Reduce inventory when products are issued or sold.
+Reduces product quantity when products are sold or issued.
 
-### Quantity Verification
+### Inventory Tracking
 
-Check current stock availability instantly.
+Tracks stock movement and maintains inventory accuracy.
 
-### Product Availability
+### Transaction Logging
 
-Verify inventory status before operations.
-
-### Transaction Tracking
-
-Maintain a complete history of stock movements.
+Records every inventory operation for audit and reporting purposes.
 
 ---
 
 ## 📊 Reporting Module
 
-### Dashboard
+### Dashboard Report
 
 Provides an overview of:
 
@@ -206,15 +257,15 @@ Provides an overview of:
 
 ### Inventory Report
 
-Displays complete inventory information.
+Displays all available inventory records.
 
 ### Low Stock Report
 
-Identifies products that require replenishment.
+Lists products that require replenishment.
 
 ### Out of Stock Report
 
-Highlights unavailable products.
+Identifies products with zero available quantity.
 
 ### Supplier Wise Report
 
@@ -261,6 +312,28 @@ Reports & Analytics
 
 ---
 
+# 📸 Screenshots
+
+Add screenshots of your application here.
+
+### Login Screen
+
+![Login](screenshots/login.png)
+
+### Main Menu
+
+![Main Menu](screenshots/main_menu.png)
+
+### Product Management
+
+![Products](screenshots/products.png)
+
+### Reports Dashboard
+
+![Reports](screenshots/reports.png)
+
+---
+
 # ▶ How to Run
 
 ### Clone Repository
@@ -275,7 +348,7 @@ git clone https://github.com/Kambhampati-Sruthi/Inventory-Management-System.git
 cd Inventory-Management-System
 ```
 
-### Execute Application
+### Run the Application
 
 ```bash
 python main.py
@@ -292,11 +365,25 @@ Through this project, the following concepts were implemented and reinforced:
 * Database Connectivity
 * SQLite Database Management
 * SQL Query Writing
-* Modular Software Design
 * CRUD Operations
-* Transaction Management
+* Transaction Processing
 * Report Generation
+* Inventory Tracking
 * Menu-Driven Application Development
+
+---
+
+# 🌍 Real-World Relevance
+
+This Inventory Management System can be adapted for:
+
+* Retail Stores
+* Warehouses
+* Pharmacies
+* Small Businesses
+* Distribution Centers
+
+The system helps organizations monitor stock levels, manage suppliers, track inventory movement, and generate operational reports efficiently.
 
 ---
 
@@ -311,4 +398,3 @@ Through this project, the following concepts were implemented and reinforced:
 * Web-Based Deployment
 
 ---
-
